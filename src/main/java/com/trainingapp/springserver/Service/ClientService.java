@@ -1,6 +1,6 @@
 package com.trainingapp.springserver.Service;
 
-import com.trainingapp.springserver.Service.Repository.DefaultRepository;
+import com.trainingapp.springserver.Service.Repository.ClientRepository;
 import com.trainingapp.springserver.model.Client;
 import org.springframework.data.util.Streamable;
 import org.springframework.stereotype.Service;
@@ -11,9 +11,9 @@ import java.util.List;
 @Service
 public class ClientService {
 
-    private final DefaultRepository repository;
+    private final ClientRepository repository;
 
-    public ClientService(DefaultRepository repository) {
+    public ClientService(ClientRepository repository) {
         this.repository = repository;
     }
 
